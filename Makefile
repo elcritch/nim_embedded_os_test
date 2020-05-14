@@ -32,7 +32,7 @@ nim: clean
 		-d:debug \
 		--os:standalone \
 		--debugger:native \
-		--exceptions:goto \
+		--exceptions:quirky \
 		-d:use_malloc \
 		--cpu:$(NIM_CPU) \
 		--no_main \
