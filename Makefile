@@ -75,6 +75,6 @@ distclean: clean
 	rm -Rf _nimble 
 
 deps:
-	nimble install -y --nimbleDir:"_nimble" https://github.com/elcritch/einode.git
+	# nimble install -y --nimbleDir:"_nimble" https://github.com/elcritch/einode.git
 	rm -Rf $(NIMBLE)/bin/temp_file $(NIMBLE)/bin/tempfile_seeder
 

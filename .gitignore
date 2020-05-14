@@ -1,3 +1,4 @@
 nimcache/
 /*.bin
 /*.elf
+nim_embedded_os_test
