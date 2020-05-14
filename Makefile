@@ -25,21 +25,19 @@ all: nim
 		# -d:cpu16 \
 		# -d:use_malloc \
 
-nim: 
+nim: clean
 	echo "NIMCACHE: " $(NIMCACHE)
 	nim cpp \
 		--gc:arc \
 		-d:debug \
-		--os:any \
+		--os:standalone \
 		--debugger:native \
 		--exceptions:goto \
 		-d:use_malloc \
-		-d:posix \
-		-d:posix_other \
 		--cpu:$(NIM_CPU) \
 		--no_main \
 		--dead_code_elim:on \
-		--threads:off \
+		--threads:on \
 		--tls_emulation:off \
 		--verbosity:3 \
 		--multimethods:on \

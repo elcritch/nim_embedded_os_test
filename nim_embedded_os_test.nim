@@ -3,7 +3,6 @@ import esp32/eth
 import esp32/ESPmDNS
 
 import strutils
-import segfaults
 
 proc NimMain() {.importc.}
 
